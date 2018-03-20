@@ -18,8 +18,6 @@ class UsersController extends Controller
 
     public function show (User $user)
     {
-        if ($user->avatar == null)
-            $user->avatar = "https://fsdhubcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600";
         return view('users.show' , compact('user'));
     }
 

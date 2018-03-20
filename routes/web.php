@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'PagesController@root')->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 Auth::routes();
 // Auth::routes();等于下面的屏蔽的路由
 // Authentication Routes...
